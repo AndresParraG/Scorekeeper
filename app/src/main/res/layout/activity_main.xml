@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ImageButton
+            android:id="@+id/t1_decrease"
+            style="@style/MinusButtonTeam1"
+            android:onClick="decreaseScoreA"/>
+
+        <TextView
+            style="@style/Team1Text"
+            android:text="@string/team_1" />
+
+        <TextView
+            android:id="@+id/t1_score"
+            style="@style/ScoreText"
+            android:text="@string/_0" />
+
+        <ImageButton
+            android:id="@+id/t1_increase"
+            style="@style/PlusButtonTeam1"
+            android:onClick="increaseScoreA"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ImageButton
+            android:id="@+id/t2_decrease"
+            style="@style/MinusButtonTeam2"
+            android:onClick="decreaseScoreB"/>
+
+        <TextView
+            style="@style/Team2Text"
+            android:text="@string/team_2"/>
+
+        <TextView
+            android:id="@+id/t2_score"
+            android:text="@string/_0"
+            style="@style/ScoreText" />
+
+        <ImageButton
+            android:id="@+id/t2_increase"
+            style="@style/PlusButtonTeam2"
+            android:onClick="increaseScoreB" />
+
+    </RelativeLayout>
+
+</LinearLayout>
